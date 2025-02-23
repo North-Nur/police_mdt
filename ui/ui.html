@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>police UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <div class="box-container-showtime-jail">
+        <div class="container-time">
+            <p>You have</p>&nbsp;<p id="showtime">50:50:00</p>&nbsp;<p>minutes left in jail !</p><i class='bx bxs-hourglass-top'></i>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+           <p>POLICE</p>&nbsp;<p>DEPARTMENT</p>&nbsp;<p>MENU</p>
+        </div>
+        <div class="menuArea">
+            <p><i class='bx bxs-book-add'></i>ทำคดีใหม่</p>
+            <p><i class='bx bxs-book' ></i>อ่านบันทึกประจำวัน</p>
+        </div>
+        <div class="playerTarget">
+            <p><i class='bx bxs-user-circle' ></i>กรุณาเลือกผู้ต้องหา</p>
+            <div class="selector">
+                <div id="selectField">
+                    <p id="selectText" > - Select player target - </p>
+                    <i class='bx bxs-down-arrow' id="arrow"></i>    
+                </div>
+                <ul id="list" class="hide">
+            
+                    <!-- <li class="options" >
+                        <div class="playername">Topone naja[1]</div>
+                    </li>
+                    <li class="options">
+                        <div class="playername">Topone naja[2]</div>
+                    </li> 
+                     <li class="options">
+                        <div class="playername">Topone naja[3]</div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="maintype">
+                <div class="list current" data-tab="all" id="all">
+                    <i class='bx bxs-data'></i>
+                    <p>ทั้งหมด</p>
+                  </div>
+                  <div class="list" data-tab="all-normal" id="normal">
+                    <i class='bx bxs-layout'></i>
+                    <p>กฏหมายทั่วไป</p>
+
+                  </div>
+                  <div class="list" data-tab="all-money" id="money">
+                    <i class='bx bxs-dollar-circle' ></i>
+                    <p>กฏหมายเกี่ยวกับทรัพย์</p>
+                  </div>
+                  
+                  <div class="list" data-tab="all-com" id="com">
+                    <i class='bx bx-windows' ></i><p>กฏหมายพรบ.คอมพิวเตอร์</p>
+
+                  </div>
+                  <div class="list" data-tab="all-street" id="street">
+                    <i class='bx bxs-traffic'></i><p>กฏหมายจราจร</p>
+
+                  </div>
+                  <div class="list" data-tab="all-seree" id="seree">
+                    <i class='bx bx-handicap'></i><p>กฏหมายสิทธิเสรีภาพ</p>
+
+                  </div>
+                  <div class="list" data-tab="all-rut" id="rut">
+                    <i class='bx bx-broadcast' ></i><p>กฏหมายคุ้มครองเจ้าหน้าที่รัฐ</p>
+
+                  </div>
+                  <div class="list" data-tab="all-health" id="health">
+                    <i class='bx bx-health' ></i><p>กฏหมายคความผิดต่อร่างกายและชีวิต</p>
+
+                  </div>
+                  <div class="list" data-tab="all-drug" id="drug">
+                    <i class='bx bxs-capsule' ></i><p>กฏหมายยาเสพติดและสิ่งผิดกฏหมาย</p>
+
+                  </div>
+                  <div class="list" data-tab="all-munkong" id="munkong">
+                    <i class='bx bxs-map-pin' ></i><p>กฏหมายความมั่นคง</p>
+
+                  </div>
+                  <div class="list" data-tab="all-other" id="other">
+                    <i class='bx bx-border-all' ></i><p>อื่นๆ</p>
+
+                  </div>
+                  
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div class="name">ข้อหา</div>
+                    <div class="number">จำนวน</div>
+                    <div class="price">ค่าปรับ</div>
+                    <div class="time">เวลา</div>
+                    <div class="select">เลือก</div>
+
+                </div>
+                <div class="all-content">
+                    <div class="tab-pane current" id="all-normal">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-money">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-com">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-street">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-seree">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-rut">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-health">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-drug">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-munkong">
+                 
+                    </div>
+                    <div class="tab-pane current" id="all-other">
+                        <div class="title-content2">
+                            <div class="main-con">
+                                <p>คดีความอื่นๆ</p>
+                            </div>
+                            <div class="number">
+                               1
+                            </div>
+                            <!-- <div class="pricePer1">
+                                1000
+                            </div>
+                            <div class="timePer1">
+                                5
+                            </div> -->
+                            <div class="price">
+                                <input type="number" value="1" class="price-other">
+                            </div>
+                            <div class="time">
+                                <input type="number" value="1" class="time-other">
+                            </div>
+                            <div class="select">
+                                <input type="checkbox" class="checkbox">
+
+                            </div>
+
+                        </div> 
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="checkdetail">
+            <p class="titleA">สรุปคดีความ</p>
+            <div class="nameLast">
+                <p>ชื่อผู้ต้องหา</p>
+                <div class="nametarget">....</div>
+            </div>
+            <div class="detail">
+                <p>คดีความ</p>
+                <p id="all-detail"></p>
+            </div>
+            <div>
+                <p>เวลาติดคุก (นาที) :</p>
+                <p id="time">0</p>
+            </div>
+            <div>
+                <p>ค่าปรับ :</p>
+                <p id="price-total">0</p>
+            </div>
+            <div class="button">
+                <button class="submit" onclick="submit()">SUBMIT</button>
+            </div>
+        </div>
+
+               
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script language="JavaScript1.2">
+           
+        function disableselect(e){
+        return false
+        }
+        function reEnable(){
+        return true
+        }
+        document.onselectstart=new Function ("return false")
+        if (window.sidebar){
+        document.onmousedown=disableselect
+        document.onclick=reEnable
+        }
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+    <script>       
+    $(function() {
+        $('.list').on('click', function() {
+            const audio = new Audio();
+            audio.src = "./sound/enter.mp3";
+            audio.play()
+            audio.volume = 0.08;
+            var tabId = $(this).attr('data-tab');
+            if (tabId == 'all') {
+              $('.list').removeClass('current'); 
+              $('.tab-pane').removeClass('current'); 
+
+
+              $(this).addClass('current');
+              $('.tab-pane').addClass('current');
+
+            }
+            else {
+              $('.list').removeClass('current'); 
+              $('.tab-pane').removeClass('current'); 
+              $(this).addClass('current');
+            //   console.log(tabId)
+              $('#' + tabId).addClass('current');
+              }
+
+        });
+});</script>
+</body>
+</html>
